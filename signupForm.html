@@ -14,13 +14,22 @@
 <body>
     <aside>
         <div class="sidebar">
-            <p id="caption"><a
-                    href="https://unsplash.com/illustrations/a-cute-ghost-surrounded-by-colorful-flowers-and-mushrooms-Wd3-LKa3cXA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Illustration</a>
-                by <a
-                    href="https://unsplash.com/@iyaniyan/illustrations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kamara
-                    Rahmat</a> on <a
-                    href="https://unsplash.com/illustrations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            </p>
+            <a href="www.theodinproject.com">
+                <div class="logo">
+                    <img src="assets/odin-lined.png">
+                    <h4>THE ODIN PROJECT</h4>
+                </div>
+            </a>
+
+            <div class="credit">
+                <p><a
+                        href="https://unsplash.com/illustrations/a-cute-ghost-surrounded-by-colorful-flowers-and-mushrooms-Wd3-LKa3cXA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Illustration</a>
+                    by <a
+                        href="https://unsplash.com/@iyaniyan/illustrations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kamara
+                        Rahmat</a> on <a
+                        href="https://unsplash.com/illustrations?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
         </div>
     </aside>
 
@@ -28,15 +37,47 @@
         <div class="container">
             <div class="desc">
                 <h1>This is not a real online service!</h1>
-                <p>The ghosts are lonely and so are you. You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>The ghosts are lonely and so are you. You know you need something like this in your life to help you
+                    realize your deepest dreams.</p>
                 <br>
-                <p>Sign up <em>now</em> to get started.</p>
+                <p>Sign up <em>now</em> to start talking with ghosts.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
 
-            <form action="example.com/path" method="post">
-                <input type="text">
+            <form action="#" method="post">
+                <label for="firstName">First Name:<br>
+                    <input type="text" id="firstName" name="firstName">
+                </label>
+
+
+                <label for="lastName">Last Name:<br>
+                    <input type="text" id="lastName" name="lastName">
+                </label>
+
+
+                <label for="username">*Username:<br>
+                    <input type="text" id="username" name="username" required>
+                </label>
+
+                <label for="userEmail">*Email:<br>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </label>
+
+
+                <label for="userPassword">*Password:<br>
+                    <input type="password" id="userPassword" name="userPassword" minlength="5" title="Password must be at least 5 characters">
+                </label>
+
+
+                <label for="passwordMatch">*Confirm Password:<br>
+                    <input type="password" id="passwordMatch" name="passwordMatch" required>
+                </label>
+
+                <sup>*Required field</sup>
             </form>
+
+            <button type="submit">Submit</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </main>
 </body>
